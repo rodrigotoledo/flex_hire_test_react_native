@@ -1,0 +1,31 @@
+# Top-most EditorConfig file
+root = true
+
+# Define o estilo de fim de linha como LF (Unix-style)
+[*]
+end_of_line = lf
+
+# Usar 2 espaços para recuo (ou quantos você preferir)
+[*.js]
+indent_style = space
+indent_size = 2
+
+[*.jsx]
+indent_style = space
+indent_size = 2
+
+# Defina o estilo de recuo para arquivos JSON
+[*.json]
+indent_style = space
+indent_size = 2
+
+# Defina o estilo de recuo para arquivos JavaScript (configurações de testes, por exemplo)
+[jest.config.js]
+indent_style = space
+indent_size = 2
+
+# Ignorar espaços em branco no final de linhas
+trim_trailing_whitespace = true
+
+# Adicionar uma linha em branco no final de cada arquivo
+insert_final_newline = true
