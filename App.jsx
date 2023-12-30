@@ -12,8 +12,23 @@ import Jobs from './Screens/Jobs';
 import SplashScreen from './Screens/SplashScreen';
 
 const Stack = createStackNavigator();
-
 const Tab = createBottomTabNavigator();
+import {
+  PROFILE_TITLE,
+  BACK_TO_MAIN_PAGE,
+  PROFILE_ALT,
+  PHONE,
+  UPDATED_AT,
+  STATUS,
+  SKILLS_TITLE,
+  NO_SKILLS_OBTAINED,
+  EXPERIENCE,
+  EMAIL_SUBSCRIPTIONS_TITLE,
+  ANSWERS_TITLE,
+  DATA_NOT_AVAILABLE_TITLE,
+  DATA_NOT_AVAILABLE_DESCRIPTION,
+  REFRESH,
+} from './lib/constants';
 
 export function MainStack() {
   return (
@@ -59,7 +74,7 @@ export default function App() {
             name="MainStack"
             component={MainStack}
             options={{
-              title: 'Logout',
+              title: BACK_TO_MAIN_PAGE,
               tabBarVisible: false,
               tabBarButton: props => null,
             }}
