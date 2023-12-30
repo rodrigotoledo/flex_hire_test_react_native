@@ -20,6 +20,7 @@ const customTheme = {
     ...DefaultTheme.colors,
     primary: '#616161', // Replace 'your_choice_color' with the desired primary color
   },
+  backgroundColor: 'rgb(219 234 254)',
   textInput: {
     borderWidth: 1,
   },
@@ -49,7 +50,6 @@ export default function SplashScreen() {
       screen: 'Profile', // Nome da tela que deseja acessar
     });
   };
-
 
   React.useLayoutEffect(() => {
     navigation.setOptions({
