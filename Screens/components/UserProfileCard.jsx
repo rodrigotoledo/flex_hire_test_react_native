@@ -15,20 +15,20 @@ function UserProfileCard(props) {
       <View style={styles.avatarContainer}>
         <View style={styles.avatar}>
           <Image
-            source={{uri: profile.data.currentUser.avatarUrl}}
+            source={{uri: profile.currentUser.avatarUrl}}
             style={styles.avatarImage}
             alt={PROFILE_ALT}
           />
         </View>
-        <Text style={styles.name}>{profile.data.currentUser.name}</Text>
+        <Text style={styles.name}>{profile.currentUser.name}</Text>
         <Text style={styles.info}>
-          {PHONE}: {profile.data.currentUser.phone}
+          {PHONE}: {profile.currentUser.phone}
         </Text>
         <Text style={styles.info}>
-          {UPDATED_AT}: {profile.data.currentUser.updatedAt}
+          {UPDATED_AT}: {profile.currentUser.lastSync}
         </Text>
         <Text style={styles.status}>
-          {STATUS}: {profile.data.currentUser.status}
+          {STATUS}: {profile.currentUser.status}
         </Text>
       </View>
     </View>
